@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="Assets/Style.CSS" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href="Images/weather.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <div class="search-container">
+              <input
+                class="form-control me-2 search-input"
+                type="search"
+                placeholder="&#128269; Search for the places..."
+                aria-label="Search"
+              />
+            </div>
+          </form>
+
+          <ul class="navbar-nav mb-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Today</a>
+            </li>
+
+            <li class="nav-item week">
+              <a class="nav-link" href="#">Week</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto" >
+            <li class="nav-item mx-2 CC">
+              <a class="nav-link C text-center" href="#">&degC</a>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link F" href="#">&degF</a>
+            </li>
+
+            <li class="nav-item mx-2 avatar">
+              <img src="Images/avatar.png" alt="">
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- weather -->
+    <div class="row mt-5">
+      <div class="container">
+        <div class="left-div col-4 float-start">
+          <div class="mx-5">
+            <img
+              class="sunny m-0"
+              src="Images/Weather_images/sunny-1.png"
+              alt=""
+            />
+
+            <p class="lead Tdeg m-0">12<sup>&degC</sup></p>
+            <p class="lead monday mt-3">Monday,<span>16:00</span></p>
+
+            <div class="LogoWeather d-flex align-items-center mt-5">
+              <img src="Images/Weather_images/cloud.png" alt="" />
+              <p class="Mcloudy lead">Moslty cloudy</p>
+            </div>
+
+            <div class="LogoWeather d-flex align-items-center mt-1">
+              <img src="Images/Weather_images/dew.png" alt="" />
+              <p class="Mcloudy lead">Rain -30%</p>
+            </div>
+
+            <div class="NY mt-5">
+              <img src="Images/NY.jpg" alt="" />
+              <p>New York,NY USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-div col-8 float-end">
+          <div
+            class="card-group d-flex justify-content-center align-items-center"
+          >
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Sun</p>
+              <img src="Images/Weather_images/sunny.png" class="card-img-top" />
+              <p class="text-center">
+                <b>15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Mon</p>
+              <img
+                src="Images/Weather_images/sun+cloud+rain.png"
+                class="card-img-top"
+              />
+              <p class="text-center">
+                <b>15 &deg-<span>7 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Tue</p>
+              <img src="Images/Weather_images/rainy.png" class="card-img-top" />
+              <p class="text-center">
+                <b>15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Wed</p>
+              <img
+                src="Images/Weather_images/rain-2.png"
+                class="card-img-top"
+              />
+              <p class="text-center">
+                <b>15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Thu</p>
+              <img src="Images/Weather_images/wind.png" class="card-img-top" />
+              <p class="text-center">
+                <b>15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Fri</p>
+              <img
+                src="Images/Weather_images/sun+cloud.png"
+                class="card-img-top"
+              />
+              <p class="text-center">
+                <b>15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+
+            <div class="card align-items-center">
+              <p class="text-center fw-bold">Wed</p>
+              <img src="Images/Weather_images/sunny.png" class="card-img-top" />
+              <p class="text-center">
+                <b> 15 &deg-<span>3 &deg</span></b>
+              </p>
+            </div>
+          </div>
+
+          <p class="lead mt-5">Today's Highlights</p>
+
+          <div class="row Highlight mt-5">
+            <div class="col-4 UVIndex">
+              <p class="heading">UV Index</p>
+              <img src="Images/speedometer.png" alt="">
+            </div>
+
+            <div class="col-4 WindStatus float-start">
+              <p class="heading">Wind status</p>
+              <p class="status">7.70 <span>km/h</span></p>
+
+              <div class="d-flex align-items-center m-0">
+                <img src="Images/placeholder.png" alt="" />
+                <p>WSW</p>
+              </div>
+            </div>
+
+            <div class="col-4 SunriseSunset float-start">
+              <p class="heading">Sunrise & sunset</p>
+
+              <div class="d-flex align-items-center m-0">
+                <img src="Images/Up.png" alt="" />
+                <p>
+                  6:35 AM
+                  <br />
+                  <span>-1m 46s</span>
+                </p>
+              </div>
+
+              <div class="d-flex align-items-center m-0">
+                <img src="Images/Down.png" alt="" />
+                <p>
+                  5:42 pM
+                  <br />
+                  <span>+1m 46s</span>
+                </p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="row Highlight mt-5">
+            <div class="col-4 humidity">
+              <p class="heading">Humidity</p>
+              <div class="d-flex align-items-center">
+              <div class="text">
+                <p class="hum my-0">12%</p>
+                <p class="normal-text">Normal&#128077;</p>
+              </div>
+                <img src="Images/Humidity.png" alt="" />
+              </div>
+            </div>
+
+            <div class="col-4 visibility">
+              <p class="heading">Visibility</p>
+              <p class="hum my-0">5.2<span>km/h</span></p>
+              <p class="normal-text">Average&#128522;</p>
+            </div>
+
+            <div class="col-4 airQulatity">
+              <p class="heading">Air Quality</p>
+              <div class="d-flex align-items-center">
+              <div class="text">
+                <p class="hum my-0">102</p>
+                <p class="normal-text">Unhealthy&#128078;</p>
+              </div>
+                <img src="Images/Air_Quality.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- weather -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
