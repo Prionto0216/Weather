@@ -57,6 +57,8 @@ body
 {
     background: #d0cfcf;
     border-radius: 5px;
+    height: 41px;
+    width: 41px;
 }
 
 input[type=search]
@@ -81,8 +83,10 @@ input[type=search]
     font-size: 30px;
     font-weight: 400;
 }
-.left-div .monday span
+.left-div .time
 {
+    font-size: 30px;
+    font-weight: 400;
     color: red;
 }
 
@@ -172,7 +176,7 @@ input[type=search]
 {
    width: 50px;
    border: none;
-   margin-right: 50px;
+   /* margin-right: 50px; */
 }
 
 .card p
@@ -267,4 +271,199 @@ margin: 0;
 {
     height: 150px;
     width: 150px;
+}
+
+
+@media (max-width: 1080px)
+{
+    .right-div .card-group .card-img-top
+    {
+        height: 60px;
+        width: 60px;
+    }
+    .right-div .Highlight .UVIndex img
+    {
+        height: 110px;
+        width: 110px;
+    }
+}
+
+@media (max-width: 360px)
+{
+    .left-div 
+    {
+        margin-left: -30px;
+        margin-right:10px;
+    }
+
+    .left-div .sunny
+    {
+        height: 75px;
+        width: 75px;
+        
+    }
+
+    .left-div .Tdeg
+    {
+        font-size: 45px;
+    }
+
+    .left-div .Tdeg sup
+    {
+        font-size: 25px;
+        
+    }
+    .left-div .monday
+    {
+        font-size: 18px;
+        
+    }
+
+    .left-div .time
+    {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+    .left-div .LogoWeather
+    {
+        flex-direction: column;
+    }
+
+    .left-div .LogoWeather img
+    {
+        margin-left: 10px;
+        height: 60px;
+        width: 60px;
+    }
+
+
+    .left-div .LogoWeather .Mcloudy
+    {
+        font-size: 10px;
+        white-space: nowrap;
+        margin-left: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .left-div .NY
+    {
+        height: 200px;
+        width: 90px;
+    }
+
+/* Right DIV */
+
+    
+    .right-div .card-group
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    .right-div .card-group .card-img-top
+    {
+        height: 40px;
+        width: 40px;
+        margin-right: 15PX;
+    }
+
+    .right-div .Highlight .heading
+    {
+        font-size: 10px;        
+    }
+
+    .right-div .Highlight .UVIndex 
+    {
+        height: 100px;
+        width: 100px;
+    }
+    .right-div .Highlight .UVIndex img
+    {
+        height: 70px;
+        width: 70px;
+    }
+
+    .right-div .Highlight .WindStatus .status
+    {
+        font-size: 20px;
+    }
+    .right-div .Highlight .WindStatus .status span
+    {
+        font-size: 8px;
+    }
+
+    .right-div .Highlight .SunriseSunset .d-flex img
+    {
+        width: 15px;
+        height: 15px;
+        margin-right: 0px;
+    }
+
+
+    .right-div .Highlight .SunriseSunset .d-flex p
+    {
+        font-size: 10px;
+        display: flex;
+        
+    }
+
+    .right-div .floatend
+    {
+        flex-wrap: wrap;
+    }
+
+    .right-div .Highlight .humidity .hum,
+    .right-div .Highlight .visibility .hum,
+    .right-div .Highlight .airQulatity .hum 
+    {
+        font-size: 20px;
+    }
+
+    .right-div .Highlight .humidity .normal-text,
+    .right-div .Highlight .visibility .normal-text,
+    .right-div .Highlight .airQulatity .normal-text 
+    {
+        font-size: 10px;
+    }
+    
+    .right-div .Highlight .humidity
+    {
+        order: 1;
+        width: 100;
+        height: 100;
+        margin-right: 20px;
+    }
+    
+    .right-div .Highlight .humidity .text
+    {
+        margin-right: -35px;
+    }
+    .right-div .Highlight .airQulatity
+    {
+        order: 2;
+        width: 100;
+        height: 100;
+    }
+
+    .right-div .Highlight .airQulatity .text
+    {
+        margin-right: -20px;
+    }
+    .right-div .Highlight .visibility 
+    {
+        order: 3;
+        width: 250;
+        height: 100;
+        
+        
+    }
+
+    .right-div .Highlight .visibility .hum span
+    {
+        font-size: 15px;
+    }
+      
 }
